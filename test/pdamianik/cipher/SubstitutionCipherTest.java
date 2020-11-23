@@ -1,5 +1,11 @@
 package pdamianik.cipher;
 
+/**
+ * A Test that tests the class {@link SubstitutionCipher}
+ * @author pdamianik
+ * @version 2020-11-23
+ */
+
 public class SubstitutionCipherTest {
 	public static void main(String[] args) {
 		SubstitutionCipher cipher = new SubstitutionCipher("kipgauly\u00fcj\u00e4tsmxcfbrow\u00dfnevzq\u00f6dh");
@@ -20,6 +26,12 @@ public class SubstitutionCipherTest {
 		realAssert(!ciphered.equals("Hello world!"));
 		realAssert(cipher.decrypt(ciphered).equals("Hello world!".toLowerCase()));
 	}
+
+	/**
+	 * Throws an {@link AssertionError}, when the passed parameter is false, does nothing otherwise.
+	 * @param condition whether an {@link AssertionError} shall be thrown or not.
+	 * @throws AssertionError will be thrown when the parameter is false.
+	 */
 
 	private static void realAssert (boolean condition) throws AssertionError {
 		if (!condition)
