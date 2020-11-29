@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class MonoAlphabeticCipher implements Cipher {
 	private String secretAlphabet;
-	private static final String DEFAULT_ALPHABET = "abcdefghijklmnopqrstuvwxyz\u00e4\u00f6\u00fc\u00df";
+	public static final String DEFAULT_ALPHABET = "abcdefghijklmnopqrstuvwxyz\u00e4\u00f6\u00fc\u00df";
 	private static final char[] DEFAULT_ALPHABET_SORTED = "abcdefghijklmnopqrstuvwxyz\u00df\u00e4\u00f6\u00fc".toCharArray();
 
 	/**
