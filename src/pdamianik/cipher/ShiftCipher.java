@@ -24,10 +24,9 @@ public class ShiftCipher extends MonoAlphabeticCipher {
 
 	public void setShiftValue(int value) {
 		String secretAlphabet = MonoAlphabeticCipher.DEFAULT_ALPHABET;
-		if (value < 0) {
-			value = Math.abs(value) % secretAlphabet.length();
-			value = secretAlphabet.length() - value;
-		} else
+		if (value < 0)
+			value = secretAlphabet.length() - (Math.abs(value) % secretAlphabet.length());
+		else
 			value = value % secretAlphabet.length();
 		super.setSecretAlphabet(secretAlphabet.substring(value) + secretAlphabet.substring(0, value));
 	}
