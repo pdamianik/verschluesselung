@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pdamianik.cipher"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pdamianik"},{"l":"pdamianik.cipher"},{"l":"pdamianik.view"}]
